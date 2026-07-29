@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Notary Journal</title>
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Notary Journal">
+<meta name="theme-color" content="#7A2E2E">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%22Notary%20Journal%22%2C%22short_name%22%3A%22Notary%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23F3EEE1%22%2C%22theme_color%22%3A%22%237A2E2E%22%7D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F3EEE1;
+    --paper-raised:#FAF6EC;
+    --line:#C9BFA6;
+    --ink:#1F2A38;
+    --ink-soft:#5B6B82;
+    --ink-faint:#8B93A0;
+    --seal:#7A2E2E;
+    --seal-dark:#54201f;
+    --brass:#A9822E;
+    --brass-light:#D9C48A;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 34px, rgba(169,130,46,0.07) 35px);
+    color:var(--ink);
+    font-family:'Source Serif 4', serif;
+    min-height:100vh;
+    padding:32px 16px 80px;
+  }
+  .wrap{max-width:920px;margin:0 auto;}
+
+  /* Letterhead */
+  .letterhead{
+    display:flex;align-items:center;gap:24px;
+    padding-bottom:22px;margin-bottom:22px;
+    border-bottom:2px solid var(--brass);
+  }
+  .seal-mark{flex:none;}
+  .letterhead h1{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:700;font-size:38px;letter-spacing:0.5px;
+    margin:0;color:var(--ink);
+  }
+  .letterhead .sub{
+    margin:2px 0 0;font-size:14px;color:var(--ink-soft);
+    letter-spacing:1.5px;text-transform:uppercase;font-family:'Source Serif 4',serif;
+  }
+  .profile-line{
+    margin-top:8px;font-family:'JetBrains Mono', monospace;font-size:12px;color:var(--ink-soft);
+    display:flex;gap:18px;flex-wrap:wrap;
+  }
+  .profile-line button{
+    font-family:'JetBrains Mono', monospace;font-size:12px;background:none;border:none;
+    color:var(--brass);cursor:pointer;padding:0;text-decoration:underline;
+  }
+
+  /* Home screen */
+  #homeScreen{padding:70px 20px 90px;}
+  .home-card{max-width:420px;margin:0 auto;text-align:center;}
+  .home-hint{color:var(--ink-soft);font-size:14.5px;margin:0 0 26px;line-height:1.6;}
+  .stamp-btn-lg{font-size:15px;padding:16px 30px;display:block;width:100%;margin-bottom:16px;}
+  #homeScreen .link-btn{font-size:12.5px;color:var(--ink-soft);text-decoration:underline;background:none;border:none;cursor:pointer;font-family:'JetBrains Mono',monospace;}
+
+  /* Toolbar */
+  .toolbar{display:flex;gap:12px;align-items:center;margin-bottom:20px;flex-wrap:wrap;}
+  .search{
+    flex:1;min-width:200px;padding:10px 14px;font-family:'Source Serif 4',serif;font-size:15px;
+    border:1px solid var(--line);background:var(--paper-raised);color:var(--ink);border-radius:2px;
+  }
+  .search:focus{outline:none;border-color:var(--brass);}
+  .stamp-btn{
+    font-family:'JetBrains Mono', monospace;font-size:13px;letter-spacing:0.5px;text-transform:uppercase;
+    background:var(--paper-raised);color:var(--seal);border:1.5px solid var(--seal);
+    padding:10px 18px;border-radius:2px;cursor:pointer;white-space:nowrap;
+    transition:transform .1s ease, background .15s ease;
+  }
+  .stamp-btn:hover{background:#f2e4e0;}
+  .stamp-btn:active{transform:scale(0.97);}
+
+  /* Ledger */
+  .ledger{border-top:1px solid var(--line);}
+  .row{
+    border-bottom:1px solid var(--line);padding:14px 4px;cursor:pointer;
+    display:grid;grid-template-columns:44px 90px 1fr 130px 24px;gap:10px;align-items:center;
+  }
+  .row:hover{background:rgba(169,130,46,0.06);}
+  .no{font-family:'JetBrains Mono', monospace;color:var(--brass);font-size:14px;}
+  .date-cell{font-family:'JetBrains Mono', monospace;font-size:12.5px;color:var(--ink-soft);}
+  .main-cell .signer{font-weight:600;font-size:15.5px;}
+  .main-cell .meta{font-size:13px;color:var(--ink-soft);margin-top:1px;}
+  .fee-cell{font-family:'JetBrains Mono', monospace;font-size:13px;text-align:right;color:var(--ink-soft);}
+  .chev{color:var(--ink-faint);transition:transform .15s ease;font-size:12px;text-align:center;}
+  .row.open .chev{transform:rotate(90deg);}
+
+  .detail{
+    display:none;padding:6px 4px 22px 54px;border-bottom:1px solid var(--line);
+    background:rgba(169,130,46,0.04);
+  }
+  .detail.show{display:block;}
+  .detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;font-size:14px;margin-bottom:14px;}
+  .detail-grid .label{color:var(--ink-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.5px;font-family:'JetBrains Mono',monospace;margin-bottom:2px;}
+  .detail-grid .val{color:var(--ink);}
+  .sig-box{margin-top:8px;}
+  .sig-box img{max-height:70px;border-bottom:1px solid var(--ink-faint);}
+  .sig-label{font-size:11px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:0.5px;font-family:'JetBrains Mono',monospace;margin-top:4px;}
+  .detail-actions{margin-top:12px;}
+  .link-btn{
+    background:none;border:none;color:var(--seal);font-family:'JetBrains Mono',monospace;
+    font-size:12px;cursor:pointer;text-decoration:underline;padding:0;
+  }
+
+  .empty{
+    text-align:center;padding:60px 20px;color:var(--ink-soft);
+  }
+  .empty h3{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--ink);margin:0 0 6px;}
+
+  /* Modal */
+  .overlay{
+    display:none;position:fixed;inset:0;background:var(--paper);
+    align-items:flex-start;justify-content:center;padding:40px 16px;overflow-y:auto;z-index:50;
+  }
+  .overlay.show{display:flex;}
+  .modal{
+    background:var(--paper-raised);max-width:640px;width:100%;border-radius:3px;
+    padding:32px 34px 28px;border:1px solid var(--line);
+    box-shadow:0 12px 40px rgba(31,42,56,0.25);
+  }
+  .modal h2{font-family:'Cormorant Garamond',serif;font-size:26px;margin:0 0 4px;}
+  .modal .modal-sub{font-size:13px;color:var(--ink-soft);margin:0 0 20px;}
+  .field-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px;}
+  .field{display:flex;flex-direction:column;gap:4px;}
+  .field.full{grid-column:1/-1;}
+  .field label{font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:var(--ink-soft);font-family:'JetBrains Mono',monospace;}
+  .field input, .field select, .field textarea{
+    font-family:'Source Serif 4',serif;font-size:14.5px;padding:8px 10px;
+    border:1px solid var(--line);background:#fff;border-radius:2px;color:var(--ink);
+  }
+  .field textarea{resize:vertical;min-height:44px;font-family:'Source Serif 4',serif;}
+  .field input:focus, .field select:focus, .field textarea:focus{outline:none;border-color:var(--brass);}
+
+  .doc-check-grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;
+    border:1px solid var(--line);background:#fff;border-radius:2px;padding:12px 14px;
+  }
+  .doc-check{display:flex;align-items:center;gap:8px;font-size:13.5px;}
+  .doc-check input[type="checkbox"]{width:15px;height:15px;accent-color:var(--seal);flex:none;}
+  .doc-check label{font-size:13.5px;text-transform:none;letter-spacing:0;color:var(--ink);font-family:'Source Serif 4',serif;}
+  .doc-other-row{grid-column:1/-1;display:flex;align-items:center;gap:8px;margin-top:4px;}
+  .doc-other-row input[type="text"]{
+    flex:1;font-family:'Source Serif 4',serif;font-size:13.5px;padding:5px 8px;
+    border:1px solid var(--line);border-radius:2px;
+  }
+
+  .sig-pad-wrap{margin-top:6px;}
+  canvas#sigPad{
+    width:100%;height:110px;border:1px dashed var(--ink-faint);background:#fff;border-radius:2px;touch-action:none;
+  }
+  .sig-tools{display:flex;justify-content:space-between;margin-top:4px;}
+  .sig-tools button{background:none;border:none;color:var(--ink-soft);font-size:12px;cursor:pointer;font-family:'JetBrains Mono',monospace;text-decoration:underline;}
+
+  /* Dedicated signing screen — shows nothing but the signature, never the ledger */
+  .sign-step{display:none;text-align:center;padding:10px 0 4px;}
+  .sign-step.show{display:block;}
+  .sign-step .back-link{
+    background:none;border:none;color:var(--ink-soft);font-size:12px;cursor:pointer;
+    font-family:'JetBrains Mono',monospace;text-decoration:underline;position:absolute;left:34px;top:28px;
+  }
+  .sign-step h2{font-family:'Cormorant Garamond',serif;font-size:26px;margin:18px 0 2px;}
+  .sign-step .sign-for{color:var(--ink-soft);font-size:15px;margin:0 0 22px;}
+  canvas#sigPadBig{
+    width:100%;height:220px;border:1px dashed var(--ink-faint);background:#fff;border-radius:2px;touch-action:none;
+  }
+
+  .modal-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:24px;}
+  .btn-ghost{
+    background:none;border:1px solid var(--line);color:var(--ink-soft);padding:9px 16px;
+    border-radius:2px;font-family:'Source Serif 4',serif;font-size:14px;cursor:pointer;
+  }
+
+  /* Seal graphic */
+  .seal-stamp-anim{
+    position:fixed;pointer-events:none;z-index:80;opacity:0;
+  }
+  @keyframes stampDown{
+    0%{opacity:0;transform:scale(2.4) rotate(-18deg);}
+    35%{opacity:1;transform:scale(0.94) rotate(-6deg);}
+    50%{transform:scale(1.05) rotate(-8deg);}
+    70%{opacity:1;transform:scale(1) rotate(-7deg);}
+    100%{opacity:0;transform:scale(1) rotate(-7deg);}
+  }
+  .stamping{animation:stampDown 900ms ease-out forwards;}
+
+  @media (max-width:560px){
+    .row{grid-template-columns:32px 1fr 20px;grid-template-areas:"no main chev" ". date .";}
+    .no{grid-area:no;} .main-cell{grid-area:main;} .chev{grid-area:chev;}
+    .date-cell, .fee-cell{grid-area:date;font-size:11.5px;}
+    .field-grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="letterhead">
+    <svg class="seal-mark" width="64" height="64" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="30" fill="none" stroke="#A9822E" stroke-width="2"/>
+      <circle cx="32" cy="32" r="24" fill="none" stroke="#A9822E" stroke-width="1"/>
+      <circle cx="32" cy="32" r="19" fill="#7A2E2E"/>
+      <text x="32" y="37" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="16" font-weight="700" fill="#F3EEE1">NP</text>
+    </svg>
+    <div>
+      <h1>Notary public journal</h1>
+      <p class="sub">Official record of notarial acts</p>
+      <div class="profile-line" id="profileLine"></div>
+    </div>
+  </div>
+
+  <div id="homeScreen">
+    <div class="home-card">
+      <p class="home-hint">Ready for the next signer. This screen never shows past entries.</p>
+      <button class="stamp-btn stamp-btn-lg" id="homeNewEntryBtn">+ Record act</button>
+      <button class="link-btn" id="viewJournalBtn">View journal (notary only)</button>
+    </div>
+  </div>
+
+  <div id="ledgerScreen" style="display:none;">
+    <div class="toolbar">
+      <button class="btn-ghost" id="backHomeBtn">&larr; Back</button>
+      <input type="text" class="search" id="searchInput" placeholder="Search by signer or document">
+      <button class="stamp-btn" id="newEntryBtn">+ Record act</button>
+    </div>
+    <div class="ledger" id="ledger"></div>
+  </div>
+
+</div>
+
+<div class="overlay" id="pinOverlay">
+  <div class="modal" style="max-width:320px;text-align:center;">
+    <h2>Enter PIN</h2>
+    <p class="modal-sub">Only the notary should view the journal.</p>
+    <input id="pinInput" type="password" inputmode="numeric" maxlength="6" placeholder="••••"
+      style="width:100%;text-align:center;font-size:22px;letter-spacing:6px;padding:10px;border:1px solid var(--line);border-radius:2px;font-family:'JetBrains Mono',monospace;">
+    <div class="modal-actions" style="justify-content:center;">
+      <button class="btn-ghost" id="pinCancel">Cancel</button>
+      <button class="stamp-btn" id="pinSubmit">Unlock</button>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="profileOverlay">
+  <div class="modal">
+    <h2>Notary details</h2>
+    <p class="modal-sub">Shown on your journal letterhead. Stored only on this device.</p>
+    <div class="field-grid">
+      <div class="field"><label>Full name</label><input id="pf-name" type="text" placeholder="Jane A. Doe"></div>
+      <div class="field"><label>Commission no.</label><input id="pf-commission" type="text" placeholder="123456"></div>
+      <div class="field"><label>State</label><input id="pf-state" type="text" placeholder="New York"></div>
+      <div class="field"><label>County</label><input id="pf-county" type="text" placeholder="Rockland"></div>
+      <div class="field"><label>Commission expires</label><input id="pf-expiry" type="date"></div>
+      <div class="field"><label>Journal PIN (optional)</label><input id="pf-pin" type="password" inputmode="numeric" maxlength="6" placeholder="Leave blank for none"></div>
+    </div>
+
+    <div style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line);">
+      <label style="font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:var(--ink-soft);font-family:'JetBrains Mono',monospace;">Automatic email backup</label>
+      <p style="font-size:13px;color:var(--ink-soft);margin:4px 0 10px;">Every certified entry is emailed automatically to the address below, in the same card format as the journal. Change it here any time.</p>
+      <div class="field-grid">
+        <div class="field full"><label>Send each record to</label><input id="pf-email" type="email" placeholder="you@example.com"></div>
+        <div class="field"><label>EmailJS service ID</label><input id="pf-ejs-service" type="text" placeholder="service_xxxxxxx"></div>
+        <div class="field"><label>EmailJS template ID</label><input id="pf-ejs-template" type="text" placeholder="template_xxxxxxx"></div>
+        <div class="field full"><label>EmailJS public key</label><input id="pf-ejs-key" type="text" placeholder="a1B2c3D4e5F6"></div>
+      </div>
+      <p id="emailStatusLine" style="font-size:12px;color:var(--ink-soft);margin:8px 0 0;font-family:'JetBrains Mono',monospace;"></p>
+      <div style="margin-top:8px;">
+        <button class="btn-ghost" id="testEmailBtn" style="font-size:12px;padding:6px 12px;">Send test email</button>
+      </div>
+    </div>
+
+    <div style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line);">
+      <label style="font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:var(--ink-soft);font-family:'JetBrains Mono',monospace;">Backup &amp; restore</label>
+      <p style="font-size:13px;color:var(--ink-soft);margin:4px 0 10px;">Save a copy of your journal to a file you control — iCloud Drive, Google Drive, or email. Restoring replaces everything currently on this device.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <button class="btn-ghost" id="exportBackupBtn">Download backup file</button>
+        <button class="btn-ghost" id="importBackupBtn">Restore from backup file</button>
+        <input type="file" id="importBackupInput" accept="application/json" style="display:none;">
+      </div>
+    </div>
+
+    <div class="modal-actions">
+      <button class="btn-ghost" id="profileCancel">Cancel</button>
+      <button class="stamp-btn" id="profileSave">Save details</button>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="entryOverlay">
+  <div class="modal" style="position:relative;">
+
+    <div id="entryFieldsStep">
+      <h2>Record a notarial act</h2>
+      <p class="modal-sub">Every field here is standard practice for a compliant notary journal.</p>
+      <div class="field-grid">
+        <div class="field"><label>Date</label><input id="f-date" type="date"></div>
+        <div class="field"><label>Time</label><input id="f-time" type="time"></div>
+
+        <div class="field"><label>Type of notarization</label>
+          <select id="f-act">
+            <option>Acknowledgment</option>
+            <option>Jurat</option>
+            <option>Oath or affirmation</option>
+            <option>Certified copy</option>
+            <option>Signature witnessing</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field"><label>Fee charged</label><input id="f-fee" type="number" min="0" step="0.01" placeholder="0.00"></div>
+
+        <div class="field full">
+          <label>Document type (check all that apply)</label>
+          <div class="doc-check-grid" id="docCheckGrid">
+            <div class="doc-check"><input type="checkbox" id="doc-poa" value="Power of Attorney"><label for="doc-poa">Power of Attorney</label></div>
+            <div class="doc-check"><input type="checkbox" id="doc-affidavit" value="General Affidavit"><label for="doc-affidavit">General Affidavit</label></div>
+            <div class="doc-check"><input type="checkbox" id="doc-will" value="Last Will &amp; Testament"><label for="doc-will">Last Will &amp; Testament</label></div>
+            <div class="doc-check"><input type="checkbox" id="doc-trust" value="Living Trust / Trust Amendment"><label for="doc-trust">Living Trust / Amendment</label></div>
+            <div class="doc-check"><input type="checkbox" id="doc-deed" value="Real Estate Deed"><label for="doc-deed">Real Estate Deed</label></div>
+            <div class="doc-check"><input type="checkbox" id="doc-mortgage" value="Mortgage / Loan Documents"><label for="doc-mortgage">Mortgage / Loan Documents</label></div>
+            <div class="doc-check"><input type="checkbox" id="doc-billsale" value="Bill of Sale"><label for="doc-billsale">Bill of Sale</label></div>
+            <div class="doc-check"><input type="checkbox" id="doc-titletransfer" value="Vehicle Title Transfer"><label for="doc-titletransfer">Vehicle Title Transfer</label></div>
+            <div class="doc-check"><input type="checkbox" id="doc-contract" value="Contract / Agreement"><label for="doc-contract">Contract / Agreement</label></div>
+            <div class="doc-check"><input type="checkbox" id="doc-certcopy" value="Certified Copy of Document"><label for="doc-certcopy">Certified Copy of Document</label></div>
+            <div class="doc-check"><input type="checkbox" id="doc-consent" value="Parental / Travel Consent"><label for="doc-consent">Parental / Travel Consent</label></div>
+            <div class="doc-check"><input type="checkbox" id="doc-healthcare" value="Advance Healthcare Directive"><label for="doc-healthcare">Advance Healthcare Directive</label></div>
+            <div class="doc-check"><input type="checkbox" id="doc-business" value="Business / LLC Documents"><label for="doc-business">Business / LLC Documents</label></div>
+            <div class="doc-check"><input type="checkbox" id="doc-court" value="Court Pleading / Legal Filing"><label for="doc-court">Court Pleading / Legal Filing</label></div>
+            <div class="doc-check"><input type="checkbox" id="doc-namechange" value="Name Change Document"><label for="doc-namechange">Name Change Document</label></div>
+            <div class="doc-check"><input type="checkbox" id="doc-guardianship" value="Guardianship / Adoption Papers"><label for="doc-guardianship">Guardianship / Adoption Papers</label></div>
+            <div class="doc-other-row">
+              <input type="checkbox" id="doc-other">
+              <label for="doc-other" style="white-space:nowrap;">Other:</label>
+              <input type="text" id="f-doc-other" placeholder="Specify document">
+            </div>
+          </div>
+        </div>
+
+        <div class="field full" style="border:1px solid var(--line);background:#fff;border-radius:2px;padding:12px 14px;">
+          <label style="margin-bottom:6px;">Scan ID barcode</label>
+          <p style="font-size:12.5px;color:var(--ink-soft);margin:0 0 10px;">Point the camera at the barcode on the back of a driver's license or state ID — it reads continuously as the camera focuses, so no need for a perfect single shot. Auto-fills the name, address, and ID expiration below.</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <button class="btn-ghost" id="scanIdBtn" type="button">Scan ID barcode (live)</button>
+            <button class="btn-ghost" id="scanIdPhotoBtn" type="button" style="font-size:12px;">Or take a photo instead</button>
+          </div>
+          <input type="file" id="idBarcodeInput" accept="image/*" capture="environment" style="display:none;">
+          <p id="scanStatus" style="font-size:12px;color:var(--ink-soft);margin:8px 0 0;"></p>
+        </div>
+
+        <div class="field full"><label>Signer full name</label><input id="f-signer" type="text" placeholder="John Q. Public"></div>
+        <div class="field full"><label>Signer address (optional)</label><textarea id="f-address" rows="2" placeholder="123 Main St, Suffern, NY"></textarea></div>
+
+        <div class="field"><label>ID verification method</label>
+          <select id="f-idtype">
+            <option>Driver's license</option>
+            <option>Passport</option>
+            <option>State ID card</option>
+            <option>Personal knowledge</option>
+            <option>Credible witness</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field"><label>ID expiration</label><input id="f-idexp" type="date"></div>
+        <div class="field"><label>Witness (if any)</label><input id="f-witness" type="text" placeholder="Optional"></div>
+
+        <div class="field full"><label>Notes</label><textarea id="f-notes" rows="2" placeholder="Optional"></textarea></div>
+      </div>
+      <div class="modal-actions">
+        <button class="btn-ghost" id="entryCancel">Cancel</button>
+        <button class="stamp-btn" id="goToSignBtn">Continue to signature</button>
+      </div>
+    </div>
+
+    <div id="entrySignStep" class="sign-step">
+      <button class="back-link" id="backToFieldsBtn">&larr; Back</button>
+      <h2>Please sign below</h2>
+      <p class="sign-for" id="signForName"></p>
+      <canvas id="sigPadBig"></canvas>
+      <div class="sig-tools">
+        <span style="font-size:11px;color:var(--ink-faint);font-family:'JetBrains Mono',monospace;">Sign with mouse or finger</span>
+        <button id="clearSigBig">Clear</button>
+      </div>
+      <div class="modal-actions" style="justify-content:center;">
+        <button class="stamp-btn" id="entrySave">Certify &amp; record</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="overlay" id="scanOverlay" style="z-index:90;">
+  <div class="modal" style="max-width:520px;padding:20px;">
+    <h2 style="margin-bottom:10px;">Scan ID barcode</h2>
+    <div style="position:relative;background:#000;border-radius:4px;overflow:hidden;">
+      <video id="scanVideo" playsinline autoplay muted style="width:100%;display:block;max-height:60vh;"></video>
+      <div style="position:absolute;inset:12%;border:2px dashed rgba(243,238,225,0.8);border-radius:4px;pointer-events:none;"></div>
+    </div>
+    <p id="scanOverlayStatus" style="font-size:13px;color:var(--ink-soft);margin:10px 0 0;text-align:center;">Point the camera at the barcode on the back of the ID.</p>
+    <div class="modal-actions" style="justify-content:center;">
+      <button class="btn-ghost" id="scanCancelBtn">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<div class="seal-stamp-anim" id="stampAnim">
+  <svg width="90" height="90" viewBox="0 0 64 64">
+    <circle cx="32" cy="32" r="30" fill="none" stroke="#A9822E" stroke-width="2"/>
+    <circle cx="32" cy="32" r="24" fill="none" stroke="#A9822E" stroke-width="1"/>
+    <circle cx="32" cy="32" r="19" fill="#7A2E2E"/>
+    <text x="32" y="30" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="9" font-weight="700" fill="#F3EEE1">CERTIFIED</text>
+    <text x="32" y="41" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="8" fill="#F3EEE1">&amp; RECORDED</text>
+  </svg>
+</div>
+
+<script>
+const ENTRIES_KEY = 'notary-log:entries';
+const PROFILE_KEY = 'notary-log:profile';
+let entries = [];
+let profile = {};
+let openRowId = null;
+
+async function loadAll(){
+  try{
+    const raw = localStorage.getItem(ENTRIES_KEY);
+    entries = raw ? JSON.parse(raw) : [];
+  }catch(err){ entries = []; }
+  try{
+    const raw = localStorage.getItem(PROFILE_KEY);
+    profile = raw ? JSON.parse(raw) : {};
+  }catch(err){ profile = {}; }
+  renderProfile();
+  renderLedger();
+  showHome();
+  initEmailJs();
+  retryPendingEmails();
+}
+
+async function saveEntries(){
+  try{ localStorage.setItem(ENTRIES_KEY, JSON.stringify(entries)); }
+  catch(err){ console.error('Could not save entries', err); alert('Could not save — your device storage may be full.'); }
+}
+async function saveProfile(){
+  try{ localStorage.setItem(PROFILE_KEY, JSON.stringify(profile)); }
+  catch(err){ console.error('Could not save profile', err); }
+}
+
+/* ---- Automatic email backup (EmailJS) ---- */
+const PENDING_KEY = 'notary-log:pending-emails';
+
+function isEmailConfigured(){
+  return !!(profile.backupEmail && profile.ejsService && profile.ejsTemplate && profile.ejsKey);
+}
+
+function initEmailJs(){
+  if(isEmailConfigured() && window.emailjs){
+    try{ emailjs.init(profile.ejsKey); }catch(e){ console.error('EmailJS init failed', e); }
+  }
+}
+
+function getPending(){
+  try{ return JSON.parse(localStorage.getItem(PENDING_KEY) || '[]'); }catch(e){ return []; }
+}
+function setPending(list){
+  try{ localStorage.setItem(PENDING_KEY, JSON.stringify(list)); }catch(e){}
+  updateEmailStatusLine();
+}
+
+function buildEmailParams(entry){
+  return {
+    to_email: profile.backupEmail || '',
+    notary_name: profile.name || '',
+    notary_commission: profile.commission || '',
+    notary_state: profile.state || '',
+    entry_date: entry.date || '',
+    entry_time: entry.time || '',
+    act_type: entry.act || '',
+    documents: (entry.docs||[]).join(', ') || 'None selected',
+    signer_name: entry.signer || '',
+    signer_address: entry.address || '',
+    id_type: entry.idType || '',
+    id_expiration: entry.idExp || '',
+    witness: entry.witness || '',
+    fee: entry.fee ? ('$' + Number(entry.fee).toFixed(2)) : '—',
+    notes: entry.notes || '',
+    signature_image: entry.signature || '',
+    has_signature: entry.signature ? 'Signature captured' : 'No signature on file'
+  };
+}
+
+async function sendEntryEmail(entry){
+  if(!isEmailConfigured() || !window.emailjs){
+    return; // email backup not set up — silently skip
+  }
+  try{
+    await emailjs.send(profile.ejsService, profile.ejsTemplate, buildEmailParams(entry));
+    updateEmailStatusLine('Last record emailed successfully.');
+  }catch(err){
+    console.error('Email send failed, queueing for retry', err);
+    const pending = getPending();
+    pending.push(entry.id);
+    setPending(pending);
+  }
+}
+
+async function retryPendingEmails(){
+  if(!isEmailConfigured() || !window.emailjs) return;
+  const pending = getPending();
+  if(pending.length === 0) return;
+  const stillPending = [];
+  for(const id of pending){
+    const entry = entries.find(e => e.id === id);
+    if(!entry) continue; // entry was deleted, drop from queue
+    try{
+      await emailjs.send(profile.ejsService, profile.ejsTemplate, buildEmailParams(entry));
+    }catch(err){
+      stillPending.push(id);
+    }
+  }
+  setPending(stillPending);
+}
+
+function updateEmailStatusLine(message){
+  const el = document.getElementById('emailStatusLine');
+  if(!el) return;
+  const pending = getPending().length;
+  if(message && pending === 0){
+    el.textContent = message;
+  }else if(pending > 0){
+    el.textContent = `${pending} record${pending===1?'':'s'} waiting to email — will retry automatically when back online.`;
+  }else if(!isEmailConfigured()){
+    el.textContent = 'Fill in all four fields above to turn on automatic email backup.';
+  }else{
+    el.textContent = 'Automatic email backup is on.';
+  }
+}
+
+window.addEventListener('online', retryPendingEmails);
+
+document.getElementById('testEmailBtn').onclick = async ()=>{
+  const testProfile = {
+    backupEmail: document.getElementById('pf-email').value.trim(),
+    ejsService: document.getElementById('pf-ejs-service').value.trim(),
+    ejsTemplate: document.getElementById('pf-ejs-template').value.trim(),
+    ejsKey: document.getElementById('pf-ejs-key').value.trim()
+  };
+  if(!testProfile.backupEmail || !testProfile.ejsService || !testProfile.ejsTemplate || !testProfile.ejsKey){
+    alert('Fill in the email address and all three EmailJS fields first.');
+    return;
+  }
+  if(!window.emailjs){
+    alert('EmailJS library did not load — check your internet connection and try again.');
+    return;
+  }
+  const btn = document.getElementById('testEmailBtn');
+  btn.disabled = true;
+  btn.textContent = 'Sending…';
+  try{
+    emailjs.init(testProfile.ejsKey);
+    const sampleEntry = {
+      date: new Date().toISOString().slice(0,10),
+      time: new Date().toTimeString().slice(0,5),
+      act: 'Acknowledgment',
+      docs: ['Test entry — not a real notarization'],
+      signer: 'Test Signer',
+      address: '', idType: 'Personal knowledge', idExp: '', witness: '', fee: '', notes: 'This is a test email to confirm your setup works.',
+      signature: null
+    };
+    const params = { ...buildEmailParams(sampleEntry), to_email: testProfile.backupEmail, notary_name: profile.name || '(not set)' };
+    await emailjs.send(testProfile.ejsService, testProfile.ejsTemplate, params);
+    alert('Test email sent — check ' + testProfile.backupEmail + '.');
+  }catch(err){
+    console.error(err);
+    const detail = (err && (err.text || err.message)) ? (err.status ? `(${err.status}) ${err.text||err.message}` : (err.text||err.message)) : JSON.stringify(err);
+    alert('Test email failed:\n\n' + detail);
+  }
+  btn.disabled = false;
+  btn.textContent = 'Send test email';
+};
+
+function renderProfile(){
+  const line = document.getElementById('profileLine');
+  const parts = [];
+  if(profile.name) parts.push(profile.name);
+  if(profile.state) parts.push('State of ' + profile.state);
+  if(profile.commission) parts.push('Comm. no. ' + profile.commission);
+  if(profile.expiry) parts.push('Expires ' + profile.expiry);
+  line.innerHTML = (parts.length ? parts.join(' &nbsp;&middot;&nbsp; ') : 'Add your notary details') +
+    ' &nbsp;&middot;&nbsp; <button id="editProfileBtn">edit</button>';
+  document.getElementById('editProfileBtn').onclick = openProfileModal;
+}
+
+function fmtDate(d){
+  if(!d) return '';
+  const [y,m,day] = d.split('-');
+  return `${m}/${day}/${y.slice(2)}`;
+}
+
+function renderLedger(filter){
+  const ledger = document.getElementById('ledger');
+  const q = (filter||'').trim().toLowerCase();
+  const sorted = [...entries].sort((a,b)=> (b.date+b.time).localeCompare(a.date+a.time));
+  const filtered = q ? sorted.filter(e =>
+    (e.signer||'').toLowerCase().includes(q) || ((e.docs||[]).join(' ')).toLowerCase().includes(q)
+  ) : sorted;
+
+  if(entries.length === 0){
+    ledger.innerHTML = `<div class="empty"><h3>No acts recorded yet</h3><p>Open the journal and record your first notarization.</p></div>`;
+    return;
+  }
+  if(filtered.length === 0){
+    ledger.innerHTML = `<div class="empty"><h3>No matches</h3><p>Try a different name or document.</p></div>`;
+    return;
+  }
+
+  ledger.innerHTML = filtered.map((e, idx) => {
+    const num = String(entries.length - entries.slice().sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time)).findIndex(x=>x.id===e.id)).padStart(3,'0');
+    const isOpen = openRowId === e.id;
+    return `
+    <div class="row ${isOpen?'open':''}" data-id="${e.id}">
+      <div class="no">${num}</div>
+      <div class="date-cell">${fmtDate(e.date)}<br>${e.time||''}</div>
+      <div class="main-cell">
+        <div class="signer">${escapeHtml(e.signer||'Unnamed signer')}</div>
+        <div class="meta">${escapeHtml(e.act||'')} &middot; ${escapeHtml((e.docs||[]).join(', ')) || 'No document type selected'}</div>
+      </div>
+      <div class="fee-cell">${e.fee ? '$'+Number(e.fee).toFixed(2) : '—'}</div>
+      <div class="chev">&#9656;</div>
+    </div>
+    <div class="detail ${isOpen?'show':''}" data-detail="${e.id}">
+      ${renderDetail(e)}
+    </div>`;
+  }).join('');
+
+  ledger.querySelectorAll('.row').forEach(row => {
+    row.addEventListener('click', () => {
+      const id = row.getAttribute('data-id');
+      openRowId = (openRowId === id) ? null : id;
+      renderLedger(document.getElementById('searchInput').value);
+    });
+  });
+  ledger.querySelectorAll('[data-delete]').forEach(btn=>{
+    btn.addEventListener('click', (ev)=>{
+      ev.stopPropagation();
+      const id = btn.getAttribute('data-delete');
+      if(confirm('Remove this entry from the journal? This cannot be undone.')){
+        entries = entries.filter(x=>x.id!==id);
+        saveEntries();
+        renderLedger(document.getElementById('searchInput').value);
+      }
+    });
+  });
+}
+
+function renderDetail(e){
+  const idLine = e.idType || '';
+  return `
+    <div class="detail-grid">
+      <div><div class="label">Signer address</div><div class="val">${escapeHtml(e.address)||'—'}</div></div>
+      <div><div class="label">ID verification</div><div class="val">${idLine||'—'}</div></div>
+      <div><div class="label">ID expiration</div><div class="val">${fmtDate(e.idExp)||'—'}</div></div>
+      <div><div class="label">Witness</div><div class="val">${escapeHtml(e.witness)||'—'}</div></div>
+      <div style="grid-column:1/-1;"><div class="label">Notes</div><div class="val">${escapeHtml(e.notes)||'—'}</div></div>
+    </div>
+    ${e.signature ? `<div class="sig-box"><img src="${e.signature}" alt="signer's captured signature"><div class="sig-label">Signer's signature</div></div>` : ''}
+    <div class="detail-actions"><button class="link-btn" data-delete="${e.id}">Delete entry</button></div>
+  `;
+}
+
+function escapeHtml(s){
+  if(!s) return '';
+  return s.replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+
+document.getElementById('searchInput').addEventListener('input', (e)=> renderLedger(e.target.value));
+
+/* Screen switching */
+let entryOpenedFrom = 'home';
+function showHome(){
+  document.getElementById('ledgerScreen').style.display = 'none';
+  document.getElementById('homeScreen').style.display = 'block';
+  openRowId = null;
+  const search = document.getElementById('searchInput');
+  if(search) search.value = '';
+}
+function showLedger(){
+  document.getElementById('homeScreen').style.display = 'none';
+  document.getElementById('ledgerScreen').style.display = 'block';
+  renderLedger('');
+}
+document.getElementById('backHomeBtn').onclick = showHome;
+document.getElementById('viewJournalBtn').onclick = ()=>{
+  if(profile.pin){
+    document.getElementById('pinInput').value = '';
+    document.getElementById('pinOverlay').classList.add('show');
+    setTimeout(()=>document.getElementById('pinInput').focus(), 50);
+  }else{
+    showLedger();
+  }
+};
+document.getElementById('pinCancel').onclick = ()=> document.getElementById('pinOverlay').classList.remove('show');
+document.getElementById('pinSubmit').onclick = ()=>{
+  if(document.getElementById('pinInput').value === profile.pin){
+    document.getElementById('pinOverlay').classList.remove('show');
+    showLedger();
+  }else{
+    alert('Incorrect PIN.');
+  }
+};
+document.getElementById('pinInput').addEventListener('keydown', (e)=>{
+  if(e.key === 'Enter') document.getElementById('pinSubmit').click();
+});
+
+/* Profile modal */
+function openProfileModal(){
+  document.getElementById('pf-name').value = profile.name||'';
+  document.getElementById('pf-commission').value = profile.commission||'';
+  document.getElementById('pf-state').value = profile.state||'';
+  document.getElementById('pf-county').value = profile.county||'';
+  document.getElementById('pf-expiry').value = profile.expiry||'';
+  document.getElementById('pf-pin').value = profile.pin||'';
+  document.getElementById('pf-email').value = profile.backupEmail||'';
+  document.getElementById('pf-ejs-service').value = profile.ejsService||'';
+  document.getElementById('pf-ejs-template').value = profile.ejsTemplate||'';
+  document.getElementById('pf-ejs-key').value = profile.ejsKey||'';
+  updateEmailStatusLine();
+  document.getElementById('profileOverlay').classList.add('show');
+}
+document.getElementById('profileCancel').onclick = ()=> document.getElementById('profileOverlay').classList.remove('show');
+
+document.getElementById('exportBackupBtn').onclick = ()=>{
+  const backup = { entries, profile, exportedAt: new Date().toISOString(), version: 1 };
+  const blob = new Blob([JSON.stringify(backup, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  const stamp = new Date().toISOString().slice(0,10);
+  a.href = url;
+  a.download = `notary-journal-backup-${stamp}.json`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(()=> URL.revokeObjectURL(url), 2000);
+};
+
+document.getElementById('importBackupBtn').onclick = ()=>{
+  document.getElementById('importBackupInput').click();
+};
+document.getElementById('importBackupInput').onchange = (ev)=>{
+  const file = ev.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = async ()=>{
+    try{
+      const data = JSON.parse(reader.result);
+      if(!data || !Array.isArray(data.entries)){
+        alert('This file does not look like a valid journal backup.');
+        return;
+      }
+      const count = data.entries.length;
+      if(!confirm(`This will replace everything currently on this device with ${count} entr${count===1?'y':'ies'} from the backup. Continue?`)){
+        return;
+      }
+      entries = data.entries;
+      profile = data.profile || {};
+      await saveEntries();
+      await saveProfile();
+      renderProfile();
+      renderLedger();
+      document.getElementById('profileOverlay').classList.remove('show');
+      alert('Backup restored successfully.');
+    }catch(err){
+      alert('Could not read that file — make sure it\'s an unmodified backup file from this app.');
+    }
+    ev.target.value = '';
+  };
+  reader.readAsText(file);
+};
+document.getElementById('profileSave').onclick = async ()=>{
+  profile = {
+    name: document.getElementById('pf-name').value.trim(),
+    commission: document.getElementById('pf-commission').value.trim(),
+    state: document.getElementById('pf-state').value.trim(),
+    county: document.getElementById('pf-county').value.trim(),
+    expiry: document.getElementById('pf-expiry').value,
+    pin: document.getElementById('pf-pin').value.trim(),
+    backupEmail: document.getElementById('pf-email').value.trim(),
+    ejsService: document.getElementById('pf-ejs-service').value.trim(),
+    ejsTemplate: document.getElementById('pf-ejs-template').value.trim(),
+    ejsKey: document.getElementById('pf-ejs-key').value.trim()
+  };
+  await saveProfile();
+  initEmailJs();
+  renderProfile();
+  document.getElementById('profileOverlay').classList.remove('show');
+};
+
+/* Entry modal + signature pad */
+let sigCtx, drawing=false, lastX=0, lastY=0, hasSig=false;
+function setupSigPad(){
+  const canvas = document.getElementById('sigPadBig');
+  const ratio = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = Math.max(1, Math.round(rect.width * ratio));
+  canvas.height = Math.max(1, Math.round(rect.height * ratio));
+  sigCtx = canvas.getContext('2d');
+  sigCtx.scale(ratio, ratio);
+  sigCtx.strokeStyle = '#1F2A38';
+  sigCtx.lineWidth = 1.8;
+  sigCtx.lineCap = 'round';
+  sigCtx.lineJoin = 'round';
+  hasSig = false;
+  drawing = false;
+
+  function pos(ev){
+    const r = canvas.getBoundingClientRect();
+    return {x: ev.clientX - r.left, y: ev.clientY - r.top};
+  }
+  function start(ev){
+    drawing = true;
+    try{ canvas.setPointerCapture(ev.pointerId); }catch(e){}
+    const p = pos(ev);
+    lastX = p.x; lastY = p.y;
+    ev.preventDefault();
+  }
+  function move(ev){
+    if(!drawing) return;
+    const p = pos(ev);
+    sigCtx.beginPath();
+    sigCtx.moveTo(lastX, lastY);
+    sigCtx.lineTo(p.x, p.y);
+    sigCtx.stroke();
+    lastX = p.x; lastY = p.y;
+    hasSig = true;
+    ev.preventDefault();
+  }
+  function end(ev){ drawing = false; }
+
+  canvas.onpointerdown = start;
+  canvas.onpointermove = move;
+  canvas.onpointerup = end;
+  canvas.onpointercancel = end;
+  canvas.onpointerleave = function(ev){ if(drawing) end(ev); };
+}
+document.getElementById('clearSigBig').onclick = ()=>{
+  const canvas = document.getElementById('sigPadBig');
+  sigCtx.clearRect(0,0,canvas.width,canvas.height);
+  hasSig = false;
+};
+
+function showFieldsStep(){
+  document.getElementById('entryFieldsStep').style.display = '';
+  document.getElementById('entrySignStep').classList.remove('show');
+}
+function showSignStep(){
+  const name = document.getElementById('f-signer').value.trim();
+  document.getElementById('signForName').textContent = 'Signing as ' + name;
+  document.getElementById('entryFieldsStep').style.display = 'none';
+  document.getElementById('entrySignStep').classList.add('show');
+  setTimeout(setupSigPad, 0);
+}
+
+function openEntryModal(fromLedger){
+  entryOpenedFrom = fromLedger ? 'ledger' : 'home';
+  ['f-date','f-time','f-signer','f-address','f-idexp','f-witness','f-notes','f-fee','f-doc-other'].forEach(id=>{
+    document.getElementById(id).value='';
+  });
+  document.querySelectorAll('#docCheckGrid input[type="checkbox"]').forEach(cb => cb.checked = false);
+  document.getElementById('f-act').selectedIndex = 0;
+  document.getElementById('f-idtype').selectedIndex = 0;
+  const today = new Date();
+  document.getElementById('f-date').value = today.toISOString().slice(0,10);
+  document.getElementById('f-time').value = today.toTimeString().slice(0,5);
+  document.getElementById('scanStatus').textContent = '';
+  hasSig = false;
+  showFieldsStep();
+  document.getElementById('entryOverlay').classList.add('show');
+}
+document.getElementById('homeNewEntryBtn').onclick = ()=> openEntryModal(false);
+document.getElementById('newEntryBtn').onclick = ()=> openEntryModal(true);
+document.getElementById('entryCancel').onclick = ()=>{
+  if(typeof stopScanOverlay === 'function') stopScanOverlay();
+  document.getElementById('entryOverlay').classList.remove('show');
+  if(entryOpenedFrom === 'ledger') showLedger(); else showHome();
+};
+document.getElementById('goToSignBtn').onclick = ()=>{
+  const signer = document.getElementById('f-signer').value.trim();
+  if(!signer){
+    alert("Enter the signer's name before moving to the signature.");
+    return;
+  }
+  showSignStep();
+};
+document.getElementById('backToFieldsBtn').onclick = showFieldsStep;
+
+/* ---- ID barcode scan (AAMVA driver's license / state ID back barcode) ---- */
+const AAMVA_KNOWN_CODES = ["DAA","DAB","DAC","DAD","DAE","DAF","DAG","DAH","DAI","DAJ","DAK","DAL","DAM","DAN","DAO","DAP","DAQ","DAR","DAS","DAT","DAU","DAV","DAW","DAX","DAY","DAZ","DBA","DBB","DBC","DBD","DBE","DBF","DBG","DBH","DBI","DBJ","DBK","DBL","DBM","DBN","DCA","DCB","DCD","DCE","DCF","DCG","DCH","DCI","DCJ","DCK","DCL","DCM","DCN","DCO","DCP","DCQ","DCR","DCS","DCT","DCU","DDA","DDB","DDC","DDD","DDE","DDF","DDG","DDH","DDI","DDJ","DDK","DDL"];
+
+function parseAAMVA(text){
+  const matches = [];
+  for(let i=0; i<text.length-2; i++){
+    const code = text.substr(i,3);
+    if(AAMVA_KNOWN_CODES.includes(code)){
+      matches.push({code, index:i});
+    }
+  }
+  const fields = {};
+  for(let i=0; i<matches.length; i++){
+    const start = matches[i].index + 3;
+    const end = (i+1 < matches.length) ? matches[i+1].index : text.length;
+    let value = text.substring(start, end).replace(/[\r\n\x00-\x1f]+$/,'').trim();
+    if(value && !fields[matches[i].code]){
+      fields[matches[i].code] = value;
+    }
+  }
+  return fields;
+}
+
+function formatAAMVADate(mmddccyy){
+  if(!mmddccyy) return '';
+  const digits = mmddccyy.replace(/\D/g,'');
+  if(digits.length < 8) return '';
+  const mm = digits.substring(0,2);
+  const dd = digits.substring(2,4);
+  const yyyy = digits.substring(4,8);
+  if(Number(mm) < 1 || Number(mm) > 12 || Number(dd) < 1 || Number(dd) > 31) return '';
+  return `${yyyy}-${mm}-${dd}`;
+}
+
+async function cropAndUpscale(bitmap, scale){
+  const cw = bitmap.width * scale;
+  const ch = bitmap.height * scale;
+  const cx = (bitmap.width - cw) / 2;
+  const cy = (bitmap.height - ch) / 2;
+  const upscale = 2.5;
+  const canvas = document.createElement('canvas');
+  canvas.width = cw * upscale;
+  canvas.height = ch * upscale;
+  const ctx = canvas.getContext('2d');
+  ctx.imageSmoothingEnabled = true;
+  ctx.imageSmoothingQuality = 'high';
+  ctx.drawImage(bitmap, cx, cy, cw, ch, 0, 0, canvas.width, canvas.height);
+  return await createImageBitmap(canvas);
+}
+
+function applyAamvaRawValue(rawValue, statusEl){
+  const fields = parseAAMVA(rawValue);
+  let first = fields.DAC || fields.DCT || '';
+  let middle = fields.DAD || '';
+  let last = fields.DCS || fields.DAB || '';
+  if(/^none$/i.test(middle)) middle = '';
+  let fullName = [first, middle, last].filter(Boolean).join(' ');
+  if(!fullName && fields.DAA){
+    // Older AAMVA format: full name combined as "Last,First,Middle"
+    const parts = fields.DAA.split(',').map(s=>s.trim()).filter(Boolean);
+    fullName = parts.join(' ');
+  }
+  if(fullName) document.getElementById('f-signer').value = fullName;
+
+  const cityStateZip = [fields.DAJ, fields.DAK].filter(Boolean).join(' ');
+  const addressParts = [fields.DAG, fields.DAI, cityStateZip].filter(Boolean);
+  if(addressParts.length) document.getElementById('f-address').value = addressParts.join(', ');
+
+  const iso = formatAAMVADate(fields.DBA);
+  if(iso) document.getElementById('f-idexp').value = iso;
+
+  const idTypeSelect = document.getElementById('f-idtype');
+  for(const opt of idTypeSelect.options){
+    if(opt.value === "Driver's license"){ idTypeSelect.value = opt.value; break; }
+  }
+
+  if(fullName || addressParts.length || iso){
+    statusEl.textContent = 'Filled in from the barcode — please double-check everything before certifying.';
+  }else{
+    statusEl.textContent = "Read the barcode but couldn't recognize its fields. Please enter details manually.";
+  }
+}
+
+async function scanIdBarcode(file){
+  const statusEl = document.getElementById('scanStatus');
+  statusEl.textContent = 'Reading barcode…';
+  try{
+    if(!('BarcodeDetector' in window)){
+      statusEl.textContent = "This browser can't scan barcodes. This feature needs a recent version of Chrome on Android — you can still enter details manually.";
+      return;
+    }
+    const supported = await BarcodeDetector.getSupportedFormats().catch(()=>[]);
+    if(supported.length && !supported.includes('pdf417')){
+      statusEl.textContent = "This device can't read this barcode type. You can still enter details manually.";
+      return;
+    }
+    const bitmap = await createImageBitmap(file);
+    const detector = new BarcodeDetector({formats:['pdf417']});
+    let barcodes = await detector.detect(bitmap);
+    if(!barcodes.length){
+      statusEl.textContent = 'No barcode found in the full photo — trying zoomed-in crops…';
+      const scales = [0.7, 0.5, 0.35, 0.22];
+      for(const scale of scales){
+        try{
+          const cropped = await cropAndUpscale(bitmap, scale);
+          barcodes = await detector.detect(cropped);
+          if(barcodes.length) break;
+        }catch(e){ /* try next scale */ }
+      }
+    }
+    if(!barcodes.length){
+      statusEl.textContent = "Couldn't find a barcode in that photo. Try the live scan option instead — it's much more forgiving.";
+      return;
+    }
+    applyAamvaRawValue(barcodes[0].rawValue, statusEl);
+  }catch(err){
+    console.error(err);
+    statusEl.textContent = 'Could not read that barcode. Try the live scan option instead.';
+  }
+}
+
+document.getElementById('scanIdPhotoBtn').onclick = ()=> document.getElementById('idBarcodeInput').click();
+document.getElementById('idBarcodeInput').onchange = (ev)=>{
+  const file = ev.target.files[0];
+  if(file) scanIdBarcode(file);
+  ev.target.value = '';
+};
+
+/* ---- Live barcode scan (camera preview, continuous detection) ---- */
+let scanStream = null;
+let scanIntervalId = null;
+
+async function openScanOverlay(){
+  const overlayStatus = document.getElementById('scanOverlayStatus');
+  document.getElementById('scanOverlay').classList.add('show');
+  overlayStatus.textContent = 'Point the camera at the barcode on the back of the ID.';
+
+  if(!('BarcodeDetector' in window)){
+    overlayStatus.textContent = "This browser can't scan barcodes. Try the photo option, or enter details manually.";
+    return;
+  }
+  if(!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia){
+    overlayStatus.textContent = "Camera access isn't available here. Try the photo option instead.";
+    return;
+  }
+  try{
+    scanStream = await navigator.mediaDevices.getUserMedia({
+      video: { facingMode: {ideal:'environment'}, width:{ideal:1920}, height:{ideal:1080} }
+    });
+  }catch(err){
+    console.error(err);
+    overlayStatus.textContent = "Could not access the camera. Check camera permission for this app, or try the photo option instead.";
+    return;
+  }
+  const video = document.getElementById('scanVideo');
+  video.srcObject = scanStream;
+  try{ await video.play(); }catch(e){}
+
+  const detector = new BarcodeDetector({formats:['pdf417']});
+  scanIntervalId = setInterval(async ()=>{
+    if(!scanStream) return;
+    try{
+      const barcodes = await detector.detect(video);
+      if(barcodes.length){
+        overlayStatus.textContent = 'Found it!';
+        applyAamvaRawValue(barcodes[0].rawValue, document.getElementById('scanStatus'));
+        stopScanOverlay();
+      }
+    }catch(e){ /* keep trying on next tick */ }
+  }, 350);
+}
+
+function stopScanOverlay(){
+  if(scanIntervalId){ clearInterval(scanIntervalId); scanIntervalId = null; }
+  if(scanStream){
+    scanStream.getTracks().forEach(t=>t.stop());
+    scanStream = null;
+  }
+  document.getElementById('scanOverlay').classList.remove('show');
+}
+
+document.getElementById('scanIdBtn').onclick = openScanOverlay;
+document.getElementById('scanCancelBtn').onclick = stopScanOverlay;
+
+function getSelectedDocs(){
+  const docs = [];
+  document.querySelectorAll('#docCheckGrid input[type="checkbox"]:not(#doc-other)').forEach(cb=>{
+    if(cb.checked) docs.push(cb.value);
+  });
+  const otherChecked = document.getElementById('doc-other').checked;
+  const otherText = document.getElementById('f-doc-other').value.trim();
+  if(otherChecked && otherText) docs.push(otherText);
+  return docs;
+}
+
+document.getElementById('entrySave').onclick = async ()=>{
+  const signer = document.getElementById('f-signer').value.trim();
+  const entry = {
+    id: 'e' + Date.now() + Math.random().toString(36).slice(2,7),
+    date: document.getElementById('f-date').value,
+    time: document.getElementById('f-time').value,
+    act: document.getElementById('f-act').value,
+    docs: getSelectedDocs(),
+    fee: document.getElementById('f-fee').value,
+    signer,
+    address: document.getElementById('f-address').value.trim(),
+    idType: document.getElementById('f-idtype').value,
+    idExp: document.getElementById('f-idexp').value,
+    witness: document.getElementById('f-witness').value.trim(),
+    notes: document.getElementById('f-notes').value.trim(),
+    signature: hasSig ? document.getElementById('sigPadBig').toDataURL('image/png') : null,
+    createdAt: Date.now()
+  };
+  entries.push(entry);
+  await saveEntries();
+  document.getElementById('entryOverlay').classList.remove('show');
+  showHome();
+  playStampAnimation();
+  sendEntryEmail(entry);
+};
+
+function playStampAnimation(){
+  const el = document.getElementById('stampAnim');
+  const btn = document.getElementById('homeNewEntryBtn');
+  const r = btn.getBoundingClientRect();
+  el.style.left = (r.left + r.width/2 - 45) + 'px';
+  el.style.top = (r.bottom + 14) + 'px';
+  el.classList.remove('stamping');
+  void el.offsetWidth;
+  el.classList.add('stamping');
+}
+
+loadAll();
+</script>
+</body>
+</html>
